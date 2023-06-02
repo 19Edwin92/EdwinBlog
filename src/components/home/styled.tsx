@@ -70,9 +70,9 @@ export const ArrowFiguer = styled.figure`
   }
 
   @media screen and (max-width: 850px) {
-    top: 75%;
+    top: 45%;
     left: 70%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, 30%);
   }
 
   @media screen and (max-width: 700px) {
