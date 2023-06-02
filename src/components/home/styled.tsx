@@ -11,7 +11,7 @@ export const Layoyt = styled.div`
       width: fit-content;
       height: fit-content;
       perspective: 500px;
-      top:50%;
+      top:45%;
       left: 50%;
       z-index: 1;
       transform: translate(-50%, -50%);
@@ -86,11 +86,11 @@ export const Poster = styled.section<CardOnMouseState>`
 @keyframes poster-ani {
       // from
       0% {
-        transform: rotateY(-20deg);
+        transform: rotateY(-10deg);
       }
       // to
       100% {
-        transform: rotateY(20deg);
+        transform: rotateY(10deg);
       }
     }
       position: relative;
