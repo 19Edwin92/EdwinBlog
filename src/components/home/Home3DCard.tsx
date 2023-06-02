@@ -22,7 +22,7 @@ const Home3DCard: React.FC = () => {
           children={<img src={profile} alt='profile'/>} />
         <Card.ProFileText>
           I'm Front-End <br/>
-          Junior Develpotor
+          Junior Developer
         </Card.ProFileText>  
         <Card.PointEmmoji
           info={["25%", "80%", "75%", "5px"]}
