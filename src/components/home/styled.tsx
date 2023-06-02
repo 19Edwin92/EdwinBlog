@@ -86,11 +86,11 @@ export const Poster = styled.section<CardOnMouseState>`
 @keyframes poster-ani {
       // from
       0% {
-        transform: rotateY(-10deg);
+        transform: rotateY(-15deg);
       }
       // to
       100% {
-        transform: rotateY(10deg);
+        transform: rotateY(15deg);
       }
     }
       position: relative;
