@@ -13,6 +13,7 @@ export const Layoyt = styled.div`
       perspective: 500px;
       top:50%;
       left: 50%;
+      z-index: 1;
       transform: translate(-50%, -50%);
       // perspective 살펴보기
       // 컨테이너와 객체에 주는 것의 차이가 있습니다. 
@@ -24,14 +25,63 @@ export const Layoyt = styled.div`
 
   @media screen and (max-width: 850px) {
       top:50%;
-      left: 25%;
+      left: 3rem;
+      transform: translate(0, -50%);
   }
 
   @media screen and (max-width: 700px) {
-      top: 25%;
+      top: 3rem;
       left: 50%;
+      transform: translate(-50%, 0);
   }
 `
+export const WelComeFiguer = styled.figure`
+  display: none;
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 850px) { 
+    display:block;
+    position: absolute;
+    width: 400px;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+  }
+  @media screen and (max-width: 700px) {
+    width: 300px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+`
+
+
+export const ArrowFiguer = styled.figure`
+  position: absolute;
+  width: 500px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 850px) {
+    top: 75%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+  }
+
+  @media screen and (max-width: 700px) {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+`
+
 export const Poster = styled.section<CardOnMouseState>`
 @keyframes poster-ani {
       // from
@@ -44,12 +94,12 @@ export const Poster = styled.section<CardOnMouseState>`
       }
     }
       position: relative;
-      width: 200px;
-      height: 250px;
+      width: 400px;
+      height: 500px;
       background-color: #FFCE55;
       border:  2px solid black;
       border-radius: 10px;
-      animation: ${({ info }) => info ? `poster-ani 2s infinite linear alternate` : "none"};
+      animation: ${({ info }) => info ? `poster-ani 2.5s infinite linear alternate` : "none"};
       transform-style: ${({ info }) => info ? "preserve-3d" : "none"};
            // 무한반복 infinite
       // 속도가 일정하게 linear
@@ -57,8 +107,14 @@ export const Poster = styled.section<CardOnMouseState>`
 
 
     @media screen and (max-width: 850px) {
-      animation: poster-ani 2s infinite linear alternate;
+      width: 200px;
+      height: 250px;
+      animation: poster-ani 2.5s infinite linear alternate;
       transform-style: preserve-3d;
+    }
+    @media screen and (max-width: 700px) {
+      width: 300px;
+      height: 375px;
     }
 `
 
@@ -68,6 +124,37 @@ export const PosterTitle = styled.h1`
       font-family: 'omyu_pretty';
       font-weight: normal;
       text-align: center;
+
+      @media screen and (max-width: 850px) {
+        font-size: 1rem;
+      }
+`
+
+export const ProFileText = styled.div`
+position: absolute;
+left: 50%;
+bottom: 5%;
+transform: translate(-50%, -50%);
+font-size: 1.5rem;
+font-family: 'omyu_pretty';
+text-align: center;
+
+@media screen and (max-width: 850px) {
+  font-size: 0.75rem;
+}
+@media screen and (max-width: 700px) {
+  font-size: 1.2rem;
+}
+`
+
+export const ProfileFigure = styled.figure`
+      width: 90%;
+      margin: 0 auto;
+      /* transform: translateZ(3px); */
+      img {
+      max-width: 100%;
+      height: auto;
+    }
 `
 
 export const PointEmmoji = styled.figure<cardPointItemSize>`
