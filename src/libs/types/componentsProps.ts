@@ -2,11 +2,11 @@ export type CardOnMouseState = {
   info: boolean;
 };
 
-export type cardPointItemSize = {
+export type InfoArr = {
   info:string[];
 }
 
 
-export type background = {
+export type InfoBackground = {
   info:string
 }

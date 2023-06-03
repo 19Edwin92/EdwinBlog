@@ -14,6 +14,14 @@
 
   SPA 기반 CSR 리액트의 라우터 구성을 위한 라이브러리, 추후 SSR을 지원하는 Next.js로 전환할 예정
 
+  ### react-syntax-highlighter
+  ```bash
+    yarn add react-syntax-highlighter
+    yarn add --dev @types/react-syntax-highlighter
+  ```
+  
+  컴포넌트에서 소스코드에 대한 코드블럭을 표현할 때 사용되는 라이브러리 
+
 ## 미디어쿼리를 위한 기준 설정 
   - 아이폰 12pro : 390 x 844
   - 아이패드 Air :        820 x 1180
