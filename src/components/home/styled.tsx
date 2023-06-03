@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { CardOnMouseState, cardPointItemSize } from "../../libs/types/componentsProps";
 
-
 export const Layoyt = styled.div`
       // 3D 공간을 만들어야 합니다.
       position: absolute;
@@ -11,17 +10,11 @@ export const Layoyt = styled.div`
       width: fit-content;
       height: fit-content;
       perspective: 500px;
-      top:45%;
+      top:43%;
       left: 50%;
       z-index: 1;
       transform: translate(-50%, -50%);
-      // perspective 살펴보기
-      // 컨테이너와 객체에 주는 것의 차이가 있습니다. 
-
-    // poster까지는 CSS 3D가 적용되지만,
-    // 그 하위까지는 적용되지 못하는 문제가 발생되어 transform: translateZ(30px); 적용되지 못하는 것을 봅니다. 
-    // 이를 위해서 poster에 transform-style: preserve-3d; 추가해 봅시다. 
-
+      cursor: pointer;
 
   @media screen and (max-width: 850px) {
       top:50%;

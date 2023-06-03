@@ -5,3 +5,8 @@ export type CardOnMouseState = {
 export type cardPointItemSize = {
   info:string[];
 }
+
+
+export type background = {
+  info:string
+}

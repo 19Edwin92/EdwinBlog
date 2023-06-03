@@ -1,8 +1,8 @@
 import {createGlobalStyle} from 'styled-components';
-// import { GlobalStyledProps } from './libs/types/global';
+import { background } from './libs/types/componentsProps';
 
-// const GlobalStyled = createGlobalStyle<GlobalStyledProps>`
-const GlobalStyled = createGlobalStyle`
+
+const GlobalStyled = createGlobalStyle<background>`
   * {
     margin: 0;
     padding: 0;
@@ -14,8 +14,8 @@ const GlobalStyled = createGlobalStyle`
     }
   }
   body {
-    background-color: #F6BB43;
+    background-color: ${({info}) => info};
   }
 `
 
-export default GlobalStyled
+export default GlobalStyled  
