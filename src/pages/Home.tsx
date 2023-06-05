@@ -9,8 +9,8 @@ import { globalBackground } from '../libs/recoil/globalBackground';
 
 const Home: React.FC = () => {
   const [,setBackground] = useRecoilState(globalBackground)
+  setBackground("#F6BB43")
   useEffect(() => {
-    setBackground("#F6BB43")
     return () => {
       setBackground("transparent")
     }
