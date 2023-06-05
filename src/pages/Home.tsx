@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     setBackground("#F6BB43")
     return () => {
-      setBackground("#transparent")
+      setBackground("transparent")
     }
   },[setBackground])
   return (

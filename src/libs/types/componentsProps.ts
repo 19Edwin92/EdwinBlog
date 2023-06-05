@@ -6,7 +6,6 @@ export type InfoArr = {
   info:string[];
 }
 
-
-export type InfoBackground = {
+export type InfoString = {
   info:string
 }

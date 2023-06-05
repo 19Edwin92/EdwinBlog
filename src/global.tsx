@@ -1,8 +1,8 @@
 import {createGlobalStyle} from 'styled-components';
-import { InfoBackground } from './libs/types/componentsProps';
+import { InfoString } from './libs/types/componentsProps';
 
 
-const GlobalStyled = createGlobalStyle<InfoBackground>`
+const GlobalStyled = createGlobalStyle<InfoString>`
   * {
     margin: 0;
     padding: 0;

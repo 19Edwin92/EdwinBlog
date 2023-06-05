@@ -21,6 +21,9 @@
   ```
   
   컴포넌트에서 소스코드에 대한 코드블럭을 표현할 때 사용되는 라이브러리 
+  - https://github.com/react-syntax-highlighter/react-syntax-highlighter/blob/master/AVAILABLE_STYLES_PRISM.MD
+  - import { InfoBackground } from '../libs/types/componentsProps';
+  - 해당 사이트에서 살펴볼 수 있다. 
 
 ## 미디어쿼리를 위한 기준 설정 
   - 아이폰 12pro : 390 x 844
