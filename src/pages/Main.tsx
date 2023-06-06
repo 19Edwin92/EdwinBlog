@@ -5,15 +5,13 @@ import { InfoBoolean } from '../libs/types/componentsProps'
 function Main() {
   const [naiState, setNaviState] = useState<boolean>(false)
   return (
-    <MainOutLine>
-      <MainInnerWrap>
-        <MainInnerWrap>
-          <MainLayout>
-            <Navibar info={naiState}> {/* Navi */}
-              <NaviInner>
-                <NaviContainer>
-                  <NaviSidebar>
-                    <NaviItemWrap>
+    <OutLine>
+          <Container>
+            <NavOutLine info={naiState}> {/* Navi */}
+              <NavContainer>
+                <NavInnerWrap>
+                  <NavInner>
+                    <NavContent>
                       <Profile>
                         <div onClick={()=>setNaviState(pre => !pre)}>버튼</div>
                       </Profile>
@@ -64,7 +62,7 @@ function Main() {
                                                 <div className='subtext'>
                                                   <div className='subtextFlex'>
                                                     <div className='subtextFlexFlex'>
-                                                      <div className='textext'>항해88-살아남아보자!!</div>
+                                                      <div className='textext'>노션 레이아웃</div>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -86,7 +84,7 @@ function Main() {
                                                 <div className='subtext'>
                                                   <div className='subtextFlex'>
                                                     <div className='subtextFlexFlex'>
-                                                      <div className='textext'>항해88-살아남아보자!!</div>
+                                                      <div className='textext'>노션 레이아웃</div>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -103,11 +101,11 @@ function Main() {
                           </SubList>
                         </nav>
                       </SubLists>
-                    </NaviItemWrap>
-                  </NaviSidebar>
-                </NaviContainer>
-              </NaviInner>
-            </Navibar>
+                    </NavContent>
+                  </NavInner>
+                </NavInnerWrap>
+              </NavContainer>
+            </NavOutLine>
             <MainBody>  {/* Body */}
               <MainBodyHeader info={naiState}>
                 <div className='MainBodyHeader1'>
@@ -117,7 +115,7 @@ function Main() {
                         <div className='navBtton'>
                           <div className='navBtton1' onClick={()=>setNaviState(pre => !pre)}>버튼</div>
                         </div>
-                        <div className='MainBodyHeaderTitleInner2'>항해99 노션관련 정리 </div>
+                        <div className='MainBodyHeaderTitleInner2'>노션 레이아웃 </div>
                       </div>
                     </div>
                     <div className='MainBodyHeaderSettings'>
@@ -192,34 +190,29 @@ function Main() {
                 </div>
               </MainSection>
             </MainBody>
-          </MainLayout>
-        </MainInnerWrap>
-      </MainInnerWrap>
-    </MainOutLine>
+          </Container>
+    </OutLine>
   )
 }
 
 export default Main
 
-const MainOutLine = styled.div`
+const OutLine = styled.div`
   height: 100vh;
   overflow: hidden;
   position: relative;
 `
-const MainInnerWrap = styled.div`
-  height: 100%;
-`
 
-const MainLayout = styled.div`
+const Container = styled.div`
   width: 100vw;
   height: 100%;
   position: relative;
   display: flex;
-  flex: 1 1 0%;
+  flex: 1 1 0;
 `
 
-
-const Navibar = styled.div<InfoBoolean>`
+// 1번 Nav
+const NavOutLine = styled.div<InfoBoolean>`
   display: ${({info}) => info && "none"};
   flex-grow: 0;
   flex-shrink: 0;
@@ -231,13 +224,15 @@ const Navibar = styled.div<InfoBoolean>`
   width: 240px;
 `
 
-const NaviInner = styled.div`
+// 2번 Nav
+const NavContainer = styled.div`
   color: rgba(25, 23, 17, 0.6);
   height: 100%;
   font-weight: 500;
 `
 
-const NaviContainer = styled.div`
+// 3번 Nav
+const NavInnerWrap = styled.div`
   position: absolute;
   top: 0px;
   left: 0px;
@@ -249,7 +244,8 @@ const NaviContainer = styled.div`
   z-index: 9;
 `
 
-const NaviSidebar = styled.div`
+// 4번 Nav
+const NavInner = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -262,7 +258,8 @@ const NaviSidebar = styled.div`
   opacity: 1;
 `
 
-const NaviItemWrap = styled.div`
+// 5번 Nav
+const NavContent = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -635,7 +632,8 @@ const MainSection = styled.section`
     height: calc(100vh - 45px);
     max-height: 100%;
     position: relative;
-    width: 479px;
+    /* width: 479px; */
+    width: 100%;
 
     .MainSection1 {
       display: flex;
