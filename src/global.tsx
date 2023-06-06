@@ -16,6 +16,9 @@ const GlobalStyled = createGlobalStyle<InfoString>`
   body {
     background-color: ${({info}) => info};
   }
+  div {
+    box-sizing: border-box;
+  }
 `
 
 export default GlobalStyled  

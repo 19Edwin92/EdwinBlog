@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CardOnMouseState, InfoArr } from "../../libs/types/componentsProps";
+import { InfoBoolean, InfoArr } from "../../libs/types/componentsProps";
 
 
 // * ----------------------------------------------------------------- * //
@@ -79,7 +79,7 @@ export const Layoyt = styled.div`
   }
 `
 
-export const Poster = styled.section<CardOnMouseState>`
+export const Poster = styled.section<InfoBoolean>`
   @keyframes poster-ani {
     // from
     0% {

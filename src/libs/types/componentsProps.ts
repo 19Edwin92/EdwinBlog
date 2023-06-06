@@ -1,4 +1,4 @@
-export type CardOnMouseState = {
+export type InfoBoolean = {
   info: boolean;
 };
 
