@@ -3,9 +3,9 @@ import { InfoString } from "../../libs/types/componentsProps";
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 export const CodeBlockWrap = styled.div`
-  margin: 1rem 0;
+  margin: 1rem;
   position: relative;
-  width: fit-content;
+  /* width: fit-content; */
 `
 
 export const PointCircleWrap = styled.div`
@@ -34,7 +34,6 @@ export const StyledSyntaxHighlighter = styled(SyntaxHighlighter).attrs({
       margin: 0,
     },
   })`
-  width: 350px;
   border-radius: 15px;
 `;
 
