@@ -55,7 +55,6 @@ const Main2: React.FC = () => {
           <li>alternate : 동작이 연속적으로 움직이듯, 진행된 시점을 역방향으로 되감아가며 다시 실행한다.</li>
           <br></br>
           <p>alternate를 사용하지 않으면, @keyframes의 종료시점에서 프레임이 끊어지고, @keyframes의 시작시점으로 바로 연결되기에 연결이 끊어지는 듯한, 연속되지 않아보이는 현상을 볼 수 있다. 이를 방지하기 위해 선언된 alternate는 종료된 시점을 역방향으로 실행하고, 다시 시작-역방향-시작-역방향을 반복하며 연속적인 동작을 구현하도록 기능한다.</p>
-
         </MainSection>
       </MainBody>
     </MainWrap>

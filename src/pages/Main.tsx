@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { InfoBoolean } from '../libs/types/componentsProps'
+import { useNavigate } from 'react-router-dom'
 
 function Main() {
   const [naiState, setNaviState] = useState<boolean>(false)
+  const navigate = useNavigate()
   return (
     <OutLine>
           <Container>
@@ -31,7 +33,7 @@ function Main() {
                         <List>
                           <div className='layout'>
                             <div className='icon'>아</div>
-                            <div className='text'>검색리스트3</div>
+                            <div className='text' onClick={()=> navigate('/main3')}>디바운스 연습</div>
                           </div>
                         </List>
                       </Lists>
