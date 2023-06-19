@@ -36,6 +36,12 @@ function Main() {
                             <div className='text' onClick={()=> navigate('/main3')}>디바운스 연습</div>
                           </div>
                         </List>
+                        <List>
+                          <div className='layout'>
+                            <div className='icon'>S</div>
+                            <div className='text' onClick={()=> navigate('/styledcomponents')}>스타일드컴포넌트</div>
+                          </div>
+                        </List>
                       </Lists>
                       <SubLists>
                         <nav>
@@ -133,61 +139,7 @@ function Main() {
                 <div className='MainSection1'>
                   <div className='MainSection2'>
                     <div className='MainSection1Title'>아아아</div>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <hr/>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <hr/>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <hr/>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <hr/>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <p>Line</p>
-                    <hr/>
+                    <p>테스트 페이지</p>
                   </div>
                 </div>
               </MainSection>
