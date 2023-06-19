@@ -1,9 +1,12 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled, { ThemeProvider, css } from 'styled-components'
+import { theme } from './styeldcomponents/theme'
 
 const StyledComponents : React.FC =() => {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
+
+      <div>
       <H1>Styled-components</H1>
       <br/>
       <Badge>Hellow World!</Badge>
@@ -15,9 +18,14 @@ const StyledComponents : React.FC =() => {
       <ButtonRedBoxFont>Button+(CSS 재사용 : RedBox+Font)</ButtonRedBoxFont>
       <br/>
       <TextFont>Text+(CSS 재사용 : Font)</TextFont>
+      <TextFont as="div">TextFont as="div" 이런식의 선언을 통해 다른 태그로 동일한 스타일을 적용할 수도 있다. </TextFont>
       <br/>
       <BorderedText>Text를 상속받은 BorderedText 스타일드 컴포넌트</BorderedText>
+      <br/>
+      <TextTheme>Theme를 참고</TextTheme>
     </div>
+
+    </ThemeProvider>
   )
 }
 
@@ -90,4 +98,11 @@ const BorderedText = styled(TextFont)`
   padding: 8px 16px;
   border: 3px solid blue;
   border-radius: 8px;
+`
+
+// styled-Theme
+const TextTheme = styled.span`
+  color: ${(props) => props.theme.color.red};
+  font-size:${(props) => props.theme.fontSizes[3]};
+  margin : ${(props) => props.theme.spaxe[2]};
 `
